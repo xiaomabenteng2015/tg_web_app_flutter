@@ -38,6 +38,7 @@ class _UserDetailsState extends State<UserDetailsView> {
             KDetailsList("start_param", webAppInitData.start_param),
             KDetailsList("auth_date", webAppInitData.auth_date),
             KDetailsList("hash", webAppInitData.hash),
+            KDetailsList("user_id", '${webAppInitData.user?.id}'),
             KDetailsList("name",
                 '${webAppInitData.user?.first_name} ${webAppInitData.user?.last_name}'),
             KDetailsList("username", webAppInitData.user?.username),
