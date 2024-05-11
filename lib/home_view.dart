@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_telegram_web_app/flutter_telegram_web_app.dart';
 import 'package:flutter_telegram_web_app/flutter_telegram_web_app.dart' as tg;
+import 'package:tg_web_app_user/scroll_test_page.dart';
 import 'package:tg_web_app_user/telegram_details_view.dart';
 import 'package:tg_web_app_user/user_details_view.dart';
 
@@ -234,6 +235,12 @@ class _HomeViewState extends State<HomeView> {
                     }),
               ],
             ),
+            KButton(
+                text: "Scroll View >",
+                onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => const ScrollTestPage()));
+                }),
             const Divider(),
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
