@@ -17,7 +17,7 @@ class ScrollTestPageState extends State<ScrollTestPage>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Scrollable List Demo"),
+        title: const Text("Scroll List Demo"),
       ),
       body: ListView.builder(
         itemCount: entries.length,
