@@ -60,6 +60,13 @@ class _UserDetailsState extends State<UserDetailsView> {
                 CopyPaste.copy(tg.initData);
               },
             ),
+            InkWell(
+              child: const Text("分享到 Twitter"),
+              onTap: () {
+                var url = "https://twitter.com/intent/tweet?url=https%3A%2F%2Fdial.to%2F%3Faction%3Dsolana-action%3Ahttps%3A%2F%2Fblinkeditor.com%2Fapi%2Factions%2Ffc06152161&text=Check+out+Blink+11";
+                tg.openTelegramLink(url);
+              },
+            ),
           ],
         ),
       ),
